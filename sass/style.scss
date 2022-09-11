@@ -1,0 +1,93 @@
+@import 'colors'; 
+
+*,::before,::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: $main-color;
+  font-size: 62,5%;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 4em;
+  top: 0;
+  left: 0;
+  background-color: $secondary-color;
+  &__nav {
+    position: relative;
+    top: 0.5em;
+    justify-content: space-around;
+    justify-items: flex-end;
+    display: flex;
+    
+  }
+  &__img {
+    position: absolute;
+    padding: 0.5em 2em;
+    left: 1em;
+    font-size: 1.5rem;
+       
+}
+    &__list {
+      right: 1em;
+      position: absolute;
+      justify-content: space-around;
+      display: flex;
+      justify-items: flex-end;
+      list-style: none;
+      flex-direction: row;
+      align-items: center;
+      font-size: 2rem;
+    }
+    a {
+      padding: 10px;
+      font-family:'Dancing Script';
+      text-decoration: none;
+      color: $nav-text-color;
+      &:hover {
+        color:gold;
+        transition: .5s;
+      }
+    }
+  }
+
+
+// .navigation {
+//   font-family: "Dancing Script", cursive;
+//   position: relative;
+//   height: 100vh;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 2.5rem;
+//   background-color: $main-color;
+//   color: gold;
+//   //overflow: hidden;
+//   display: none;
+//   .navlink {
+//     padding: 1.2rem;
+//     // position: absolute;
+//     justify-content: space-around;
+//     color: $nav-text-color;
+//     cursor: pointer;
+//     text-decoration: none;
+//     &:hover {
+//       color: #ffd60a;
+//       transition: 0.5s;
+//     }
+//   }
+// }
+
+
