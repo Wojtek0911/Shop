@@ -25,22 +25,22 @@ body {
   background-color: $secondary-color;
   &__nav {
     position: relative;
-    top: 0.5em;
+    top: 0em;
     justify-content: space-around;
     justify-items: flex-end;
     display: flex;
-    
   }
   &__img {
     position: absolute;
+    top: 0.3em;
     padding: 0.5em 2em;
     left: 1em;
     font-size: 1.5rem;
-       
 }
     &__list {
-      right: 1em;
       position: absolute;
+      top: 0.4em;
+      right: 1em;
       justify-content: space-around;
       display: flex;
       justify-items: flex-end;
@@ -58,6 +58,59 @@ body {
         color:gold;
         transition: .5s;
       }
+    }
+  }
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-height: 600px;
+  margin-top: 4em;
+  // z-index: 10;
+  &__img {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/img/header-small.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+  }
+  &__shadow {
+    position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: -5;
+  }
+    &__title {
+      position: absolute;
+      z-index: 1;
+      font-family:'Dancing Script';
+      font-size: 6rem;
+      display: flex;
+      justify-content: center;
+     justify-items: center;
+     top: 40%;
+      left: 40%;
+      color: $main-title-color;
+      z-index: 10;
+    }
+    &__text {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      top: 60%;
+      left: 40%;
+      font-size: 2rem;
+      font-family:'Dancing Script';
+      color: $main-title-color;
+      z-index: 10;
+
     }
   }
 
